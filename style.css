@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background: #DDDDDD;
+    color: #232222;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+body.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0px 30px 70px rgba(0,0,0,0.2);
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-item {
+    display: block;
+    flex: 1 1 400px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    background-size: cover;
+}
+
+.intro-1 {
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.intro-2 {
+    font-size: 10vw;
+    line-height: 11vw;
+}
+
+.intro-overlay {
+    background-color: rgba(0,0,0,0.4);
+    padding: 20% 4% 4%;
+}
+
+.intro-left {
+    background-image: url("./images/page-1/banner-1.webp");
+}
+
+.intro-right {
+    background-image: url("./images/page-2/banner-2.jfif");
+    text-align: right;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 2%;
+    border-bottom: 1px solid #eee;
+}
+
+.link-left {
+    order: 1;
+}
+
+.link-logo {
+    order: 2;
+}
+
+.link-right {
+    order: 3;
+}
+
+.link a {
+    color: #232222;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: #1362ff
+}
+
+.link-logo a {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.h1 {
+    background-size: cover;
+    background-position: center center;
+}
+
+.page-1 .h1 {
+    background-image: url("./images/page-1/banner-1.webp");
+    background-position: center center;
+}
+
+.page-2 .h1 {
+    background-image: url("./images/page-2/banner-2.jfif");
+    background-position: center bottom;
+}
+
+h1 {
+    background-color: rgba(0,0,0,0.2);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #fff;
+    padding: 80px 2% 40px;
+}
+
+.content {
+    padding: 40px 2%;
+}
+
+ol {
+    margin: 10px 0 20px 30px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 2%;
+    border-top: 1px solid #eee;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .link.link-logo {
+        margin-bottom: 30px;
+    }
+
+    .link.link-logo a {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
+    .link {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .link a {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.row {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.column {
+    background-size: cover;
+    background-position: center center;
+    flex: 1 1 300px;
+    min-width: 40%;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.column-overlay {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.column-text {
+    padding: 60px 6% 20px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    margin-bottom: 15px;
+    line-height: 32px;
+}
+
+.page-1 .c1 {
+    background-image: url("./images/page-1/Definition\ of\ Biodiversity.jpg");
+}
+
+.page-1 .c2 {
+    background-image: url("./images/page-1/Role\ of\ Evolution.jfif");
+}
+
+.page-1 .c3 {
+    background-image: url("./images/page-1/Scientific\ Study\ of\ Biodiversity.webp");
+}
+
+.page-1 .c4 {
+    background-image: url("./images/page-1/Ecosystem\ Function.jpeg");
+}
+
+.page-1 .c5 {
+    background-image: url("./images/page-1/Threats\ to\ Biodiversity.jfif");
+}
+
+.page-1 .c6 {
+    background-image: url("./images/page-1/Conservation\ Efforts.jfif");
+}
+
+.page-2 .c1 {
+    background-image: url("./images/page-2/p1.jpg");
+}
+
+.page-2 .c2 {
+    background-image: url("./images/page-2/p2.jfif");
+}
+
+.page-2 .c3 {
+    background-image: url("./images/page-2/p3.jpg");
+}
+
+.page-2 .c4 {
+    background-image: url("./images/page-2/p4.jpg");
+}
+
+.page-2 .c5 {
+    background-image: url("./images/page-2/p5.jpg");
+}
+
+.page-2 .c6 {
+    background-image: url("./images/page-2/p6.jpg");
+}
+
+.page-2 .c7 {
+    background-image: url("./images/page-2/p7.jpg");
+}
